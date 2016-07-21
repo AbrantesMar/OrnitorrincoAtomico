@@ -1,11 +1,10 @@
 var express = require('express');
 var router = express.Router();
+var expor = require('../controllers/pistaController.js');
 
-
-var homepageController = function (req, res){
-  res.render('index', { title: 'Express'});
-};
-
-router.get('/', homepageController);
+router.get('/', expor);
+router.get('/pistas', expor);
+router.get('/cadastro', expor);
+router.get('/edicao', expor);
 
 module.exports = router;
