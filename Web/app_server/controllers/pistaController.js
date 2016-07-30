@@ -1,8 +1,12 @@
 module.exports.index = function(req, res){
-  res.render('index', { title: 'Marcio' });
+  res.render('index', { title: 'Marcio', conta: 'teste' });
 };
 module.exports.cadastrar = function(req, res){
-  res.render('index', { title: 'Henrique' });
+  var conta = 1;
+  for (var i = 0; i < 10; i++) {
+    conta++;
+  }
+  res.render('index', { title: 'Henrique', conta: conta });
 };
 module.exports.editar = function(req, res){
   res.render('index', { title: 'Nunes' });
