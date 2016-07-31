@@ -1,0 +1,11 @@
+var express = require('express');
+var router = express.Router();
+var pistas = require('../controllers/pistaController');
+console.log('inicio de rotas');
+router.get('/', pistas.index);
+router.get('/cadastrar', pistas.cadastrar);
+router.get('/editar:pista', pistas.editar);
+router.get('/buscar:id', pistas.buscar);
+console.log('finm de totas');
+module.exports = router;
+console.log('teste3');
