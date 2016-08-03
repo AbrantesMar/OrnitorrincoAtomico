@@ -2,8 +2,7 @@ var mongoose = require('mongoose');
 var readline = require('readline');
 
 var gracefulShutdown;
-//var dbUri = 'mongodb://user:pass@host:port/db';
-var dbUri = 'mongodb://ornitorrincoatomico:0rnit0rr!nc012345@ds139425.mlab.com:39425/ornitorrincoatomicodb';
+var dbUri = 'mongodb://user:pass@host:port/db';
 mongoose.connect(dbUri);
 var db = mongoose.connection;
 
